@@ -1,16 +1,10 @@
-import React from 'react';
-import './App.css';
+import { Provider } from "./contexts";
+import Principal from "./pages/Principal";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Ta Funfando aqui
-        </p>
-      </header>
-    </div>
+    <Provider>
+      <Principal />
+    </Provider>
   );
 }
-
-export default App;
